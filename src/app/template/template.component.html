@@ -1,0 +1,30 @@
+<div class="container mt-5 template-wrap">
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <form (ngSubmit)="onFormSubmit()" #f="ngForm">
+                <div class="form-group">
+                    <label for="username">User Name</label>
+                    <input type="text" class="form-control" id="username" name="username" ngModel>
+                </div>
+
+                <div class="form-group mt-4">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" name="email" ngModel>
+                </div>
+
+                <div class="form-group mt-4">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender" class="form-control" ngModel>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>
